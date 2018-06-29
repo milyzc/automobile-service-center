@@ -1,0 +1,41 @@
+﻿@using Microsoft.Extensions.Options;
+@using ASC.Web.Configuration;
+@inject IOptions<ApplicationSettings> _configurationSettings
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html" ; charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximun-scale=1.0, user-scalable=no" />
+    <title>@_configurationSettings.Value.ApplicationTitle</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/css/vendor.min.css" />
+        <link rel="stylesheet" href="~/css/sidebar.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="~/lib/css/vendor.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/sidebar.min.css" asp-append-version="true" />
+    </environment>
+</head>
+<body>
+    @RenderBody()
+    <environment include="Development">
+        <script src="~/lib/js/vendor.min.js"></script>
+        <script src="~/js/layout.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="~/lib/js/vendor.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+        </script>
+        <script src="~/js/layout.min.js" asp-append-version="true"></script>
+    </environment>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,146 @@
+﻿
+@{
+    Layout = "_MasterLayout";
+}
+<!-- Header -->
+<div id="wrapper">
+
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            @*<li>
+                    <div class="userView">
+                        <div class="background blue-grey lighten-1"></div>
+                        <a href="#!user"><img class="circle" src="~/images/male.png"></a>
+                        <a href="#!name"><span class="white-text name">John Doe</span></a>
+                        <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                    </div>
+                </li>*@
+            <li>
+                <a href="#!">
+                    <i class="material-icons">dashboard</i>
+                    Dashboard
+                </a>
+            </li>
+            <li>
+                <a data-toggle="collapse" data-target="#userOptions" aria-expanded="false" href="#!">
+                    <i class="material-icons">
+                        supervisor_account
+                    </i> User Administration
+                </a>
+                <ul class="collapse" id="userOptions" aria-expanded="false">
+                    <li>
+                        <a href="#!">
+                            <i class="material-icons">
+                                account_box
+                            </i>Customers
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <i class="material-icons">
+                                person_add
+                            </i>Provision User
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <i class="material-icons">
+                                remove_circle
+                            </i>Deactivate User
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#!">
+                    <i class="material-icons">
+                        perm_data_setting
+                    </i>Service Requests
+                </a>
+            </li>
+            <li>
+                <a href="#!">
+                    <i class="material-icons">message</i>
+                    Service Notifications
+                </a>
+            </li>
+            <li>
+                <a href="#!">
+                    <i class="material-icons">inbox</i>
+                    Promotions
+                </a>
+            </li>
+            <li>
+                <a href="#!">
+                    <i class="material-icons">settings</i>
+                    Settings
+                </a>
+            </li>
+            <li>
+                <a href="#!">
+                    <i class="material-icons">exit_to_app</i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <a href="#" id="menu-toggle" class="btn btn-success">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <h5>Automobile Service Center</h5>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+@*<footer class="page-footer blue-grey lighten-1 secureLayout">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">About Us</h5>
+                <p class="grey-text text-lighten-4">
+                    Automobile Service Center is certified Company to perform car services. Our
+                    Workshop operations started in the month of October, 2010.
+                    We primarily focus on providing better services to our customers, and as a
+                    result of the hard work we were awarded as the "Best Service" for the year
+                    2008 and that too within a short period of time.
+                </p>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Additional Services</h5>
+                <ul>
+                    <li><a class="white-text" href="#!">Services</a></li>
+                    <li><a class="white-text" href="#!">Finance</a></li>
+                    <li><a class="white-text" href="#!">Used Cars</a></li>
+                    <li><a class="white-text" href="#!">Insurance</a></li>
+                    <li><a class="white-text" href="#!">Driving School</a></li>
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Connect</h5>
+                <ul>
+                    <li><a class="white-text" href="#!">Facebook</a></li>
+                    <li><a class="white-text" href="#!">LinkedIn</a></li>
+                    <li><a class="white-text" href="#!">Twitter</a></li>
+                    <li><a class="white-text" href="#!">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright row margin-bottom-0px">
+            <div class="col s12">
+                Powered by <a class="brown-text text-lighten-3" href="http://materializecss.com">
+                    Materialize
+                </a>
+            </div>
+        </div>
+    </footer>*@
