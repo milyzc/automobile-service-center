@@ -4,7 +4,14 @@
 }
 <!-- Header -->
 <div id="wrapper">
+    <div class="row top-bar">
+        <a href="#" id="menu-toggle" class="hamburger-menu">
 
+        </a>
+        <div class="col-10 col-lg-10">
+            <h5>Automobile Service Center</h5>
+        </div>
+    </div>
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             @*<li>
@@ -86,15 +93,6 @@
     </div>
     <div id="page-content-wrapper">
         <div class="container-fluid">
-            <div class="row">
-                <a href="#" id="menu-toggle" class="btn btn-success">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </a>
-                <h5>Automobile Service Center</h5>
-            </div>
             <div class="row">
                 <div class="col-12">
                     @RenderBody()

@@ -4,6 +4,8 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASC.Web", "ASC.Web\ASC.Web.csproj", "{F4AF2BB5-A9DE-48F0-A631-1549AE1B8764}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureStoreTest", "AzureStoreTest\AzureStoreTest.csproj", "{84C06E38-E191-407A-AB65-299A74122B05}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,18 @@ Global
 		{F4AF2BB5-A9DE-48F0-A631-1549AE1B8764}.Release|x64.Build.0 = Release|Any CPU
 		{F4AF2BB5-A9DE-48F0-A631-1549AE1B8764}.Release|x86.ActiveCfg = Release|Any CPU
 		{F4AF2BB5-A9DE-48F0-A631-1549AE1B8764}.Release|x86.Build.0 = Release|Any CPU
+		{84C06E38-E191-407A-AB65-299A74122B05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84C06E38-E191-407A-AB65-299A74122B05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84C06E38-E191-407A-AB65-299A74122B05}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{84C06E38-E191-407A-AB65-299A74122B05}.Debug|x64.Build.0 = Debug|Any CPU
+		{84C06E38-E191-407A-AB65-299A74122B05}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{84C06E38-E191-407A-AB65-299A74122B05}.Debug|x86.Build.0 = Debug|Any CPU
+		{84C06E38-E191-407A-AB65-299A74122B05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84C06E38-E191-407A-AB65-299A74122B05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84C06E38-E191-407A-AB65-299A74122B05}.Release|x64.ActiveCfg = Release|Any CPU
+		{84C06E38-E191-407A-AB65-299A74122B05}.Release|x64.Build.0 = Release|Any CPU
+		{84C06E38-E191-407A-AB65-299A74122B05}.Release|x86.ActiveCfg = Release|Any CPU
+		{84C06E38-E191-407A-AB65-299A74122B05}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
